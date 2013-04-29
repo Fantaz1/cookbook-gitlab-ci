@@ -1,5 +1,5 @@
 upstream gitlab_ci {
-  server unix:<%= @app_path %>/current/tmp/sockets/gitlab-ci.socket;
+  server unix:<%= @app_path %>/shared/sockets/gitlab-ci.socket;
 }
 
 server {
